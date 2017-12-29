@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>
+        Psychic-Game
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <img height=80 width=200 src="assets/images/pg.jpg ">
+            <div class="container">
+                <a id="header" class="navbar-brand" href="#">Psychic-Game</a>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <div class="main">
+        <h2>About The Game:</h2>
+        <br>
+        <p>The Psychic Game A simple game that allows you to guess the letter the computer chooses.</p>
+        <p>Choose a letter from A - Z and test your psycic ability to see if you can read a computers mind!!!</p>
+    </div>
+
+    <div class="instruction">
+        <h2>Instructions:</h2>
+        <ul>
+            <li>Try to guess the letter the computer has picked. Any letter from A - Z</li>
+            <li>You can guess 10 times</li>
+            <li>To start the game click the start button</li>
+        </ul>
+        <button type="button" onclick="startGame()" class="btn btn-primary btn-lg">Start Game</button>
+        <br>
+        <br>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <h4 class="card-header bg-success">Wins</h4>
+                <div class="card-body">
+                    <p id="wins" class="card-text">0</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <h4 class="card-header bg-danger">Losses</h4>
+                <div class="card-body">
+                    <p id="losses" class="card-text">0</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <h4 class="card-header bg-warning">Guesses</h4>
+                <div class="card-body">
+                    <p id="guesses" class="card-text">10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="history">
+        <h2>
+            History
+        </h2>
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div id="roundHistory" class="card-header bg-primary"><i class="fa fa-fw fa-history"></i> Round History</div>
+                <div class="card-body">
+                    <!-- running history - when the first round is played, this content is overwritten -->
+                    <div id="history">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+</body>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</html>

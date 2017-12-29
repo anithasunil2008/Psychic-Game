@@ -1,0 +1,24 @@
+#header {
+    font-size: 30px;
+    margin-left: 350px;
+}
+
+img {
+    margin-left: 40px;
+}
+
+.main,
+.instruction,
+.row,
+.history {
+    margin-left: 40px;
+}
+
+.score {
+    margin-left: 40px;
+    display: inline;
+}
+
+#roundHistory {
+    color: white;
+}
